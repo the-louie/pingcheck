@@ -43,7 +43,7 @@ def main(target):
             }
         }
     ]
-    client = InfluxDBClient('localhost', 8086, 'speedmonitor', 'loupingmon', 'pingmonitor')
+    client = InfluxDBClient('localhost', 8086, 'user', 'pass', 'dbname')
 
     client.write_points(speed_data)
 
